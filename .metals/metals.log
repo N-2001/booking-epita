@@ -490,3 +490,17 @@ AVERTISSEMENT: Unmatched cancel notification for request id 464
 2026.04.15 10:30:54 INFO  no build target found for /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/infrastructure/configuration/SecurityConfiguration.java. Using fallback presentation compiler.[0m
 2026.04.15 10:30:54 WARN  no build target for: /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/infrastructure/configuration/SecurityConfiguration.java[0m
 2026.04.15 10:30:54 INFO  no build target found for /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/infrastructure/configuration/SecurityConfiguration.java. Using fallback presentation compiler.[0m
+2026.04.15 10:32:03 WARN  no build target for: /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/Application.java[0m
+2026.04.15 10:32:03 INFO  no build target found for /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/Application.java. Using fallback presentation compiler.[0m
+2026.04.15 10:32:03 INFO  no build target found for /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/Application.java. Using fallback presentation compiler.[0m
+2026.04.15 10:32:03 INFO  no build target found for /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/Application.java. Using fallback presentation compiler.[0m
+2026.04.15 10:33:01 INFO  no build target found for /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/Application.java. Using fallback presentation compiler.[0m
+2026.04.15 10:33:05 INFO  no build target found for /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/Application.java. Using fallback presentation compiler.[0m
+2026.04.15 10:33:18 INFO  no build target found for /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/Application.java. Using fallback presentation compiler.[0m
+2026.04.15 10:33:24 INFO  no build target found for /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/Application.java. Using fallback presentation compiler.[0m
+2026.04.15 10:33:31 INFO  no build target found for /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/Application.java. Using fallback presentation compiler.[0m
+2026.04.15 10:33:37 INFO  no build target found for /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/Application.java. Using fallback presentation compiler.[0m
+2026.04.15 10:33:50 INFO  no build target found for /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/Application.java. Using fallback presentation compiler.[0m
+2026.04.15 10:34:02 INFO  no build target found for /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/Application.java. Using fallback presentation compiler.[0m
+2026.04.15 10:34:07 INFO  no build target found for /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/Application.java. Using fallback presentation compiler.[0m
+2026.04.15 10:34:07 INFO  no build target found for /home/nana/webSec/TD1/Booking/src/main/java/dev/_xdbe/booking/creelhouse/Application.java. Using fallback presentation compiler.[0m
