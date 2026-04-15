@@ -27,12 +27,19 @@ public class SecurityConfiguration {
         return http
             .authorizeHttpRequests(auth -> auth
                 // Step 4a: add access control
-                // ...
+                .requestMatchers("/booking/**").permitAll()
+                .requestMatchers("/").permitAll()
+                .requestMatchers("/dashboard").hasRole("ADMIN")
+
                 // Step 4a: end
                 .anyRequest().permitAll()
             )
             // Step 4b: Add login form
-            // ...
+            .formLogin(form -> form
+                .defaultSuccessUrl("/dashboard", true)
+                .permitAll()
+            )
+            .logout(logout -> logout.permitAll())
             // Step 4b: End of login form configuration
             
             .csrf((csrf) -> csrf
@@ -47,7 +54,29 @@ public class SecurityConfiguration {
     }
 
     // Step 3: add InMemoryUserDetailsManager
-    // ...
+    @Bean
+    public UserDetailsService userDetailsService() {
+        UserDetails user = User.builder()
+            .username("User")
+            .password("{bcrypt}$2a$10$nSxMfXlmLCYFhnjt4iwFA.wKHMZecosaJjSI1irRVFkn.uYaUg8Ku")
+            .roles("USER")
+            .build();
+
+        UserDetails admin = User.builder()
+                .username("Admin")
+                .password("{bcrypt}$2a$10$nSxMfXlmLCYFhnjt4iwFA.wKHMZecosaJjSI1irRVFkn.uYaUg8Ku")
+                .roles("ADMIN")
+                .build();
+
+        UserDetails guest = User.builder()
+                .username("Gest")
+                .password("{bcrypt}$2a$10$nSxMfXlmLCYFhnjt4iwFA.wKHMZecosaJjSI1irRVFkn.uYaUg8Ku")
+                .roles("GUEST")
+                .build();
+
+        return new InMemoryUserDetailsManager(user, admin, guest);
+        
+    }
     // Step 3: end
 
 }
