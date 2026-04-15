@@ -16,8 +16,19 @@ spring:
   # Step 1a: Configure SSL with the certificate and private key
   # ...
   # Step 1a: End of SSL configuration
+  ssl:
+    bundle:
+      pem:
+        web:
+          keystore:
+            private-key: "/home/nana/webSec/TD1/Booking/localhost+2-key.pem"
+            certificate: "/home/nana/webSec/TD1/Booking/localhost+2.pem"
+          trustore:
+            certificate: "~/.local/share/mkcert/rootCA.pem"
 
 server:
+  ssl:
+    bundle: web
   port: 8443
   # Step 1b: Enable SSL and specify ssl bundle
   # ...
@@ -25,3 +36,5 @@ server:
   # Step 5: Configure session cookie with SameSite attribute
   # ...
   # Step 5: End of session cookie configuration
+
+  

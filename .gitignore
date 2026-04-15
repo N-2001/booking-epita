@@ -41,3 +41,6 @@ out/
 
 ### Database files ###
 *.db
+
+### certificates ###
+*.pem
