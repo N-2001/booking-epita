@@ -1,23 +1,22 @@
-name: Security Analysis
+name: security
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_dispatch: 
+
+permissions:
+  actions: read
+  security-events: write
+  contents: read
 
 jobs:
   dependencies-analysis:
     runs-on: ubuntu-latest
-    permissions:
-      security-events: write
-      contents: read
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: run osv-scanner
-        uses: google/osv-scanner-action/osv-scanner-action@v1.9.1
+        uses: google/osv-scanner-action/osv-scanner-action@daa2c68f50d845057895a9c300e42478481c1d26
         with:
           scan-args: |-
             --format sarif
@@ -33,10 +32,7 @@ jobs:
   source-code-analysis:
     runs-on: ubuntu-latest
     container:
-      image: returntocorp/semgrep
-    permissions:
-      security-events: write
-      contents: read
+      image: returntocorp/semgrep@sha256:8897c88b63a339899385078a632e858444a17937966848f074d4400780f2d87e
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
