@@ -32,7 +32,7 @@ jobs:
   source-code-analysis:
     runs-on: ubuntu-latest
     container:
-      image: returntocorp/semgrep@sha256:8897c88b63a339899385078a632e858444a17937966848f074d4400780f2d87e
+      image: returntocorp/semgrep:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
