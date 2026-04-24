@@ -10,14 +10,14 @@ jobs:
   dependencies-analysis:
     runs-on: ubuntu-latest
     permissions:
-      security-events: write 
+      security-events: write
       contents: read
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: run osv-scanner
-        uses: google/osv-scanner-action@v1.9.1
+        uses: google/osv-scanner-action/osv-scanner-action@v1.9.1
         with:
           scan-args: |-
             --format sarif
